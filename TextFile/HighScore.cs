@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TextFile
 {
-    public class HighScore
+    internal class HighScore
     {
         public string name;
         public int score;
