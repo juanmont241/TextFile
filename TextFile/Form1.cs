@@ -146,7 +146,17 @@ namespace TextFile
 
         private void removeScoresButton_Click(object sender, EventArgs e)
         {
+            string scoreBox = nameRemove.Text;
 
+            for (int i = 0; i < scores.Count; i++)
+            {
+                if (scoreBox == scores[i].name)
+                {
+                    scores.RemoveAt(i);
+                }
+            }
+
+            DisplayScores();
         }
 
         public void DisplayScores()
